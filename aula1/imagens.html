@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem da Hello Kitty</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(255, 182, 193, 0.562);
+        }
+        #foto{
+            width: 300px;
+            text-align: center;
+            display: block;
+            margin: auto;
+            border-radius: 30px;
+        }
+        h1{
+            text-align: center;
+            color:#FF69B4 ;
+            text-transform: uppercase;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h3{
+            text-align: center;
+            color: darkviolet;   
+            text-transform: uppercase;
+         }
+        button{
+            display: block;
+            margin: auto;
+            width: 155px;
+            height: 100px;
+            background-color: lightcoral;
+            border: none;
+            border-radius: 30px;
+        }
+        a{
+            text-decoration: none;
+            color:rgb(255, 0, 179);
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem linda</h1>
+    <p>
+       <a href="https://www.hellokitty.com.pt/"> <img src="../imagens/hello kit.webp" alt="imagem da Hello Kitty" id="foto"></a>
+    </p>
+    <button onclick="clicar()">Clique aqui para mudar a imagem</button>
+<p>
+    Entre clicando <a href="https://www.hellokitty.com.pt/" target="_blank">aqui</a> no site oficial da hello kit
+</p>
+    <script>
+        function clicar(){
+            let x = document.getElementById('foto').src;
+            if(x == "https://media.istockphoto.com/id/458128941/pt/foto/ol%C3%A1-kitty.jpg?s=612x612&w=0&k=20&c=f4OQBtXBKj7LtxQVwfvLrUB-j2_6s7MDBWDpb_8Yai0="){
+                document.getElementById('foto').src = "../imagens/hello kit.webp";
+            } else {
+                document.getElementById('foto').src = "https://media.istockphoto.com/id/458128941/pt/foto/ol%C3%A1-kitty.jpg?s=612x612&w=0&k=20&c=f4OQBtXBKj7LtxQVwfvLrUB-j2_6s7MDBWDpb_8Yai0=";
+            }
+        }
+        
+    </script>
+</body>
+</html>
